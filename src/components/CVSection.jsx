@@ -64,7 +64,7 @@ const CVSection = () => {
   // Function to download the actual CV PDF
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/Tuhin_Chowdhury_CV.pdf';
+    link.href = `${import.meta.env.BASE_URL}Tuhin_Chowdhury_CV.pdf`;
     link.download = 'Tuhin_Chowdhury_CV.pdf';
     document.body.appendChild(link);
     link.click();
@@ -73,7 +73,7 @@ const CVSection = () => {
 
   // Function to view CV in new tab
   const handleViewCV = () => {
-    window.open('/Tuhin_Chowdhury_CV.pdf', '_blank');
+    window.open(`${import.meta.env.BASE_URL}Tuhin_Chowdhury_CV.pdf`, '_blank');
   };
 
   const generateCVHTML = (data) => {

@@ -128,7 +128,7 @@ const SinglePagePortfolio = () => {
                   onClick={() => {
                     if (item.action === 'download') {
                       const link = document.createElement('a');
-                      link.href = '/Tuhin_Chowdhury_CV.pdf';
+                      link.href = `${import.meta.env.BASE_URL}Tuhin_Chowdhury_CV.pdf`;
                       link.download = 'Tuhin_Chowdhury_CV.pdf';
                       document.body.appendChild(link);
                       link.click();
@@ -246,7 +246,7 @@ const SinglePagePortfolio = () => {
               
                 <div className="flex flex-wrap gap-4">
                   <button
-                    onClick={() => window.open('/Tribal_Clothing_Research_Paper.pdf', '_blank')}
+                    onClick={() => window.open(`${import.meta.env.BASE_URL}Tribal_Clothing_Research_Paper.pdf`, '_blank')}
                     className="flex items-center gap-2 bg-cyan-500 text-black px-5 py-2 rounded-lg font-medium font-mono hover:bg-cyan-400 transition-all text-sm"
                     style={{boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'}}
                   >
