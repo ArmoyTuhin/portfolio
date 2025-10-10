@@ -5,28 +5,28 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      company: "Golden Harvest Infotech Ltd",
+      company: "Golden Harvest Infotech Limited",
+      location: "Dhaka, Bangladesh",
       period: "Feb 2023 – Present",
       role: "Software Engineer",
       achievements: [
-        "DSLR SDK–based image capture system",
-        "Bulk image transfer, real-time processing",
-        "Led 4-member dev team",
-        "Improved system efficiency by 40%"
+        "Designed a RAG-based multi-agent system in the healthcare domain for processing and retrieving insights from medical data (prescriptions, reports, patient records)",
+        "Developed a desktop application integrated with hardware camera (via SDKs) to capture customized images, perform real-time image analysis, and securely upload digitized church records in bulk to the cloud for auditing and data entry",
+        "Received Best Emerging Engineer Award (2024) for outstanding performance and innovative contributions"
       ],
-      technologies: [".NET 8", "Nikon SDK", "WPF", "Real-time Processing"]
+      technologies: ["Python", "OpenAI 4", "ChromaDB", "MCP", "N8N", "Betterstack", "AWS S3", "PostgreSQL", "Docker", "C#", ".NET 8", "WPF", "GraphQL", "SQLite", "Nikon SDK"]
     },
     {
-      company: "Rokkhi IT Ltd",
+      company: "Rokkhi IT Limited",
+      location: "Dhaka, Bangladesh",
       period: "June 2022 – Jan 2023",
-      role: "Backend Developer",
+      role: "Software Engineer (Intern)",
       achievements: [
-        "Java Spring Boot REST APIs",
-        "Improved Android app for 20K+ users",
-        "Optimized camera/storage → 30% boost",
-        "Microservices architecture implementation"
+        "Implemented an automated document processing feature by building a Java service that connects to an EasyOCR Python module",
+        "Reduced manual data entry by over 50% through intelligent OCR integration",
+        "Gained hands-on experience with microservices architecture and cross-language service integration"
       ],
-      technologies: ["Java", "Spring Boot", "Android", "REST APIs", "Microservices"]
+      technologies: ["Java", "Spring Boot", "Python", "EasyOCR", "REST APIs", "Microservices"]
     }
   ];
 
@@ -63,6 +63,7 @@ const Experience = () => {
                     <Briefcase className="w-6 h-6 mr-3" />
                     <h3 className="text-2xl font-bold">{exp.company}</h3>
                   </div>
+                  <p className="text-sm text-muted-foreground mb-4">{exp.location}</p>
                   <div className="flex items-center mb-4 text-muted-foreground">
                     <Calendar className="w-5 h-5 mr-2" />
                     <span>{exp.period}</span>

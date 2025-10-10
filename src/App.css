@@ -43,72 +43,72 @@
 
 :root {
   --radius: 0.5rem;
-  /* Black and White Color Scheme */
-  --background: #ffffff;
-  --foreground: #000000;
-  --card: #ffffff;
-  --card-foreground: #000000;
-  --popover: #ffffff;
-  --popover-foreground: #000000;
-  --primary: #000000;
-  --primary-foreground: #ffffff;
-  --secondary: #f5f5f5;
-  --secondary-foreground: #000000;
-  --muted: #f5f5f5;
-  --muted-foreground: #666666;
-  --accent: #f5f5f5;
-  --accent-foreground: #000000;
-  --destructive: #dc2626;
-  --border: #e5e5e5;
-  --input: #e5e5e5;
-  --ring: #000000;
-  --chart-1: #000000;
-  --chart-2: #666666;
-  --chart-3: #999999;
-  --chart-4: #cccccc;
-  --chart-5: #e5e5e5;
-  --sidebar: #ffffff;
-  --sidebar-foreground: #000000;
-  --sidebar-primary: #000000;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f5f5f5;
-  --sidebar-accent-foreground: #000000;
-  --sidebar-border: #e5e5e5;
-  --sidebar-ring: #000000;
+  /* Sci-Fi Cyberpunk Color Scheme - Force Dark Mode */
+  --background: #000000;
+  --foreground: #00ffff;
+  --card: #0a0a0a;
+  --card-foreground: #00ffff;
+  --popover: #0a0a0a;
+  --popover-foreground: #00ffff;
+  --primary: #00ffff;
+  --primary-foreground: #000000;
+  --secondary: #0f0f23;
+  --secondary-foreground: #00ffff;
+  --muted: #1a1a2e;
+  --muted-foreground: #8b9dc3;
+  --accent: #6e00ff;
+  --accent-foreground: #00ffff;
+  --destructive: #ff0080;
+  --border: #00ffff;
+  --input: #1a1a2e;
+  --ring: #00ffff;
+  --chart-1: #00ffff;
+  --chart-2: #ff00ff;
+  --chart-3: #00ff00;
+  --chart-4: #ffff00;
+  --chart-5: #ff0080;
+  --sidebar: #000000;
+  --sidebar-foreground: #00ffff;
+  --sidebar-primary: #00ffff;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #0f0f23;
+  --sidebar-accent-foreground: #00ffff;
+  --sidebar-border: #00ffff;
+  --sidebar-ring: #00ffff;
 }
 
 .dark {
   --background: #000000;
-  --foreground: #ffffff;
-  --card: #111111;
-  --card-foreground: #ffffff;
-  --popover: #111111;
-  --popover-foreground: #ffffff;
-  --primary: #ffffff;
+  --foreground: #00ffff;
+  --card: #0a0a0a;
+  --card-foreground: #00ffff;
+  --popover: #0a0a0a;
+  --popover-foreground: #00ffff;
+  --primary: #00ffff;
   --primary-foreground: #000000;
-  --secondary: #1a1a1a;
-  --secondary-foreground: #ffffff;
-  --muted: #1a1a1a;
-  --muted-foreground: #999999;
-  --accent: #1a1a1a;
-  --accent-foreground: #ffffff;
-  --destructive: #dc2626;
-  --border: #333333;
-  --input: #333333;
-  --ring: #ffffff;
-  --chart-1: #ffffff;
-  --chart-2: #cccccc;
-  --chart-3: #999999;
-  --chart-4: #666666;
-  --chart-5: #333333;
+  --secondary: #0f0f23;
+  --secondary-foreground: #00ffff;
+  --muted: #1a1a2e;
+  --muted-foreground: #8b9dc3;
+  --accent: #6e00ff;
+  --accent-foreground: #00ffff;
+  --destructive: #ff0080;
+  --border: #00ffff;
+  --input: #1a1a2e;
+  --ring: #00ffff;
+  --chart-1: #00ffff;
+  --chart-2: #ff00ff;
+  --chart-3: #00ff00;
+  --chart-4: #ffff00;
+  --chart-5: #ff0080;
   --sidebar: #000000;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #ffffff;
+  --sidebar-foreground: #00ffff;
+  --sidebar-primary: #00ffff;
   --sidebar-primary-foreground: #000000;
-  --sidebar-accent: #1a1a1a;
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: #333333;
-  --sidebar-ring: #ffffff;
+  --sidebar-accent: #0f0f23;
+  --sidebar-accent-foreground: #00ffff;
+  --sidebar-border: #00ffff;
+  --sidebar-ring: #00ffff;
 }
 
 @layer base {
@@ -117,15 +117,90 @@
   }
   body {
     @apply bg-background text-foreground;
+    position: relative;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+    pointer-events: none;
+    z-index: 0;
+    animation: gridScroll 20s linear infinite;
   }
   html {
     scroll-behavior: smooth;
   }
 }
 
+/* Animated Grid Background */
+@keyframes gridScroll {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50px 50px;
+  }
+}
+
+/* Sci-Fi Glow Effects */
+.sci-fi-glow {
+  text-shadow: 
+    0 0 10px rgba(0, 255, 255, 0.5),
+    0 0 20px rgba(0, 255, 255, 0.3),
+    0 0 30px rgba(0, 255, 255, 0.1);
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    text-shadow: 
+      0 0 10px rgba(0, 255, 255, 0.5),
+      0 0 20px rgba(0, 255, 255, 0.3),
+      0 0 30px rgba(0, 255, 255, 0.1);
+  }
+  50% {
+    text-shadow: 
+      0 0 20px rgba(0, 255, 255, 0.8),
+      0 0 30px rgba(0, 255, 255, 0.5),
+      0 0 40px rgba(0, 255, 255, 0.3);
+  }
+}
+
+/* Border Glow Animation */
+.border-glow {
+  border-color: #00ffff;
+  box-shadow: 
+    0 0 10px rgba(0, 255, 255, 0.3),
+    inset 0 0 10px rgba(0, 255, 255, 0.1);
+  animation: border-pulse 2s ease-in-out infinite;
+}
+
+@keyframes border-pulse {
+  0%, 100% {
+    box-shadow: 
+      0 0 10px rgba(0, 255, 255, 0.3),
+      inset 0 0 10px rgba(0, 255, 255, 0.1);
+  }
+  50% {
+    box-shadow: 
+      0 0 20px rgba(0, 255, 255, 0.6),
+      inset 0 0 20px rgba(0, 255, 255, 0.2);
+  }
+}
+
 /* Custom styles for smooth scrolling and animations */
 .section-padding {
   @apply py-20 px-4 md:px-8 lg:px-16;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-section {
@@ -149,9 +224,77 @@
 }
 
 .hover-lift {
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hover-lift:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+/* Neon Button Effect */
+.neon-button {
+  position: relative;
+  background: transparent;
+  border: 2px solid #00ffff;
+  color: #00ffff;
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 
+    0 0 20px rgba(0, 255, 255, 0.6),
+    0 0 40px rgba(0, 255, 255, 0.4),
+    inset 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+/* Holographic Card Effect */
+.holo-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.9), rgba(26, 26, 46, 0.5));
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.holo-card:hover {
+  border-color: rgba(0, 255, 255, 0.6);
+  transform: translateY(-5px);
+  box-shadow: 
+    0 10px 30px rgba(0, 255, 255, 0.2),
+    0 0 60px rgba(110, 0, 255, 0.1);
+}
+
+/* Scanline Effect */
+.scanlines {
+  position: relative;
+  overflow: hidden;
+}
+
+.scanlines::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 255, 255, 0.02) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+  animation: scanline 8s linear infinite;
+}
+
+@keyframes scanline {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
 }

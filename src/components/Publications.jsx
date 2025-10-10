@@ -5,59 +5,72 @@ import { BookOpen, Award, ExternalLink } from 'lucide-react';
 const Publications = () => {
   const publications = [
     {
-      title: "Tribal Dress Classification Using CNNs",
-      venue: "IEEE",
-      type: "Conference Paper",
-      description: "Advanced computer vision research using YOLOv5 on custom 'TribalBd' dataset for cultural dress classification.",
-      achievements: [
-        "89.97% accuracy achieved",
-        "Outperformed YOLOv6/YOLOv7",
-        "Custom dataset creation",
-        "Cultural preservation through AI"
-      ],
-      technologies: ["YOLOv5", "Computer Vision", "Deep Learning", "Python"],
-      doi: "IEEE DOI Available"
-    },
-    {
-      title: "BLDAR: Blended Ensemble Model for Energy Forecasting",
+      title: "BLDAR: A Blending Ensemble Learning Approach for Primary Energy Consumption Analysis",
       venue: "Springer",
       type: "Book Chapter",
-      description: "Innovative ensemble machine learning approach combining multiple algorithms for accurate energy consumption prediction.",
+      year: "2025",
+      description: "Implemented BLDAR, a novel blended ensemble model integrating LightGBM, Decision Tree, AdaBoost, and Random Forest regressors for forecasting primary energy consumption.",
       achievements: [
-        "R² score: 90%",
-        "Combined LightGBM, AdaBoost, DT, RF",
-        "Energy efficiency optimization",
-        "Sustainable technology contribution"
+        "Achieved state-of-the-art 90% R² score",
+        "Established new benchmark for sustainable energy analytics",
+        "Combined multiple ensemble algorithms for superior accuracy",
+        "Contributed to sustainable energy research"
       ],
-      technologies: ["LightGBM", "AdaBoost", "Random Forest", "Ensemble Learning"],
-      doi: "Springer Chapter Published"
+      technologies: ["LightGBM", "Decision Tree", "AdaBoost", "Random Forest", "Python", "Scikit-Learn"],
+      doi: "Springer Book Chapter - 2025"
+    },
+    {
+      title: "An Automatic System for Identifying and Categorizing Tribal Clothing Based on Convolutional Neural Networks",
+      venue: "IEEE",
+      type: "Conference Paper",
+      year: "2022",
+      description: "Developed a CNN-based system using the custom-made 'TribalBd' dataset to classify Bangladeshi tribal dresses with high accuracy.",
+      achievements: [
+        "Achieved 89.97% accuracy with YOLOv5",
+        "Surpassed YOLOv6 (86.24%) and YOLOv7 (71.28%)",
+        "Created custom 'TribalBd' dataset",
+        "Pioneering work in cultural heritage preservation through AI"
+      ],
+      technologies: ["YOLOv5", "YOLOv6", "YOLOv7", "Computer Vision", "Deep Learning", "Python", "PyTorch"],
+      doi: "IEEE Conference Paper - 2022"
     }
   ];
 
   const participations = [
     {
-      event: "Java Developers Conference 2024",
-      role: "Speaker",
-      topic: "Spring AI talk",
-      description: "Presented on AI integration in Spring framework"
-    },
-    {
-      event: "IEEE CS BD Symposium 2024",
+      event: "IEEE Computer Society Bangladesh Chapter Symposium",
       role: "Researcher",
-      topic: "Research accepted",
-      description: "Research paper accepted and presented"
+      topic: "Research Abstract Presentation",
+      year: "Nov 2024",
+      description: "Research abstract accepted for presentation"
     },
     {
-      event: "Photography Club of India",
-      role: "Winner",
-      topic: "Street photography (2022)",
-      description: "First place in street photography competition"
+      event: "Fourth International Conference on Emerging Research in Electronics, Computer Science and Technology (ICERECT), IEEE",
+      role: "Presenter",
+      topic: "Computer Vision Research",
+      year: "Mar 2022",
+      description: "Presented paper on tribal dress classification using CNNs"
     },
     {
-      event: "Facebook Messenger Bot Hackathon",
-      role: "Top 100",
-      topic: "Chatbot Development (2020)",
-      description: "Ranked in top 100 participants globally"
+      event: "Facebook Developer Circles Challenge (META)",
+      role: "Top 20 Finalist",
+      topic: "Chatbot Development for Messenger Platform",
+      year: "Feb 2021",
+      description: "Participated in Chatbot-Developments Hackathons and placed in top 20"
+    },
+    {
+      event: "ICPC Intra University Selection Programming Contest",
+      role: "Participant",
+      topic: "Competitive Programming",
+      year: "Oct 2019",
+      description: "Team ranked top 50 among 900 teams"
+    },
+    {
+      event: "Leading University National Programming Contest",
+      role: "Participant",
+      topic: "Competitive Programming",
+      year: "Feb 2018",
+      description: "Team ranking was 72 out of 190 teams"
     }
   ];
 
@@ -98,7 +111,10 @@ const Publications = () => {
                   <span className="text-sm font-medium text-muted-foreground bg-muted px-3 py-1 rounded-full">
                     {pub.type}
                   </span>
-                  <span className="text-sm font-bold text-foreground">{pub.venue}</span>
+                  <div className="text-right">
+                    <span className="text-sm font-bold text-foreground block">{pub.venue}</span>
+                    <span className="text-xs text-muted-foreground">{pub.year}</span>
+                  </div>
                 </div>
 
                 <h4 className="text-xl font-bold mb-4">{pub.title}</h4>
@@ -162,6 +178,9 @@ const Publications = () => {
               >
                 <div className="flex items-center justify-between mb-3">
                   <h4 className="font-bold text-lg">{participation.event}</h4>
+                  <span className="text-xs text-muted-foreground">{participation.year}</span>
+                </div>
+                <div className="flex items-center gap-2 mb-2">
                   <span className="text-sm font-medium text-muted-foreground bg-muted px-2 py-1 rounded">
                     {participation.role}
                   </span>

@@ -82,19 +82,19 @@ const Hero = () => {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl leading-relaxed">
-  <span className="block mb-2">
-    I build solutions that <span className="font-semibold text-foreground">simplify life</span>.
-  </span>
-  <span className="block mb-2">
-    <span className="italic">Not tied to any stack</span>  I follow the problem.
-  </span>
-  <span className="block mb-2">
-    I can cling to a challenge for days , my longest streak was <span className="font-semibold text-foreground">8 days</span> to crack a single bug.
-  </span>
-  <span className="block">
-    <span className="font-semibold">Currently exploring:</span> Federated Learning &amp; crafting smart workflows with <span className="font-semibold">n8n automation</span>.
-  </span>
-</p>
+              <span className="block mb-2 font-semibold text-foreground">
+                Software Engineer
+              </span>
+              <span className="block mb-4">
+                Building innovative AI-driven solutions and scalable systems that solve real-world problems.
+              </span>
+              <span className="block mb-2">
+                Specializing in <span className="font-semibold text-foreground">AI/ML</span>, <span className="font-semibold text-foreground">Backend Development</span>, and <span className="font-semibold text-foreground">Computer Vision</span>.
+              </span>
+              <span className="block">
+                Passionate about research, automation, and creating impactful software solutions.
+              </span>
+            </p>
 
             {/* Contact Info */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8 justify-center lg:justify-start">

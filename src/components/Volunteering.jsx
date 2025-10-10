@@ -2,23 +2,46 @@ import React from 'react';
 
 const volunteeringList = [
 	{
-		org: 'IEEE Student Branch',
-		role: 'Event Volunteer',
-		year: '2023',
-		desc: 'Assisted in organizing tech seminars and coding competitions.',
+		org: 'Computer Society',
+		role: 'General Secretary',
+		year: '11/2021 – 11/2022',
+		desc: 'Organized the university\'s annual programming contest and coordinated departmental technical events.',
 	},
 	{
-		org: 'Local NGO',
-		role: 'Teaching Volunteer',
-		year: '2022',
-		desc: 'Taught basic computer skills to underprivileged children.',
+		org: 'Bohubrihi - EdTech Platform',
+		role: 'Campus Director',
+		year: '01/2021 – 01/2022',
+		desc: 'Organized programming sessions and workshops on behalf of Bohubrihi to enhance student skills.',
 	},
-	// Add more as needed
+	{
+		org: 'SECPA - University Photography Club',
+		role: 'Vice President & Instructor',
+		year: '01/2020 – 01/2022',
+		desc: 'Served as Image Aesthetics Instructor and conducted workshops on visual composition and photography techniques. My work has won several national and international awards at photography exhibitions.',
+	},
+	{
+		org: 'HULT Prize SEC',
+		role: 'Founding Campus Director',
+		year: '2019 – 2020',
+		desc: 'Organized online seminars and programs to promote social entrepreneurship on campus.',
+	},
+	{
+		org: 'Unmesh Academic Care',
+		role: 'Mathematics & Physics Instructor',
+		year: '2018 – 2022',
+		desc: 'Taught Mathematics and Physics to college-level students, delivering comprehensive lessons and supporting academic development.',
+	},
+	{
+		org: 'Private Mentorship',
+		role: 'Java & Data Structures Instructor',
+		year: '2022 – Present',
+		desc: 'Mentored over 10+ students, resulting in improved programming skills and successful project completions.',
+	}
 ];
 
 const Volunteering = () => (
 	<section id="volunteering" className="section-padding bg-background mb-12">
-		<h2 className="text-3xl font-bold mb-8 text-center">Volunteering</h2>
+		<h2 className="text-3xl font-bold mb-8 text-center">Extracurricular Activities & Teaching</h2>
 		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 			{volunteeringList.map((item, idx) => (
 				<div

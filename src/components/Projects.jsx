@@ -6,89 +6,72 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Automated DSLR Image Capture",
-      description: "Advanced image capture system using .NET 8 and Nikon SDK with real-time processing capabilities.",
+      title: "AI-Driven Hospital Management System",
+      description: "Built an AI-driven hospital management system with microservices and a RAG-based AI agent for MHM, Houston, TX.",
       achievements: [
-        "1000+ images/hr processing capacity",
-        "Real-time resolution checks",
-        "WPF GUI for user interaction",
-        "Automated workflow optimization"
+        "Reduced scheduling conflicts by 40%",
+        "Improved patient support efficiency",
+        "RAG-based multi-agent system for medical data processing",
+        "Microservices architecture for scalability"
       ],
       challenges: [
-        "Integrating Nikon SDK with .NET 8",
-        "Ensuring real-time performance",
-        "User-friendly GUI design"
+        "Integrating multiple healthcare data sources",
+        "Ensuring HIPAA compliance and data security",
+        "Building context-aware AI agents for medical queries"
       ],
-      technologies: [".NET 8", "Nikon SDK", "WPF", "Real-time Processing"],
-      category: "Enterprise Software"
-    },
-    {
-      title: "Invoice Data Extraction using PaddleOCR + Llama 3.1",
-      description: "AI-powered invoice processing system with high accuracy OCR and intelligent data extraction.",
-      achievements: [
-        "98% accuracy rate",
-        "Context-aware parsing via LLM agent",
-        "Automated data validation",
-        "Multi-format support"
-      ],
-      challenges: [
-        "Handling diverse invoice formats",
-        "Optimizing OCR accuracy",
-        "Integrating LLM with OCR pipeline"
-      ],
-      technologies: ["PaddleOCR", "Llama 3.1", "Python", "AI/ML"],
+      technologies: ["Python", "OpenAI 4", "ChromaDB", "MCP", "N8N", "Betterstack", "AWS S3", "PostgreSQL", "Docker"],
       category: "AI/Machine Learning"
     },
     {
-      title: "Supply Chain Microservices",
-      description: "Scalable microservices architecture for supply chain management with comprehensive service integration.",
+      title: "Church Census Records Archiving Project",
+      description: "Engineered a high-throughput DSLR imaging system with real-time spatial analysis for Family Search, Utah.",
       achievements: [
-        "Auth, gateway, registry services",
-        "Spring Boot microservices",
-        "Redis caching implementation",
-        "JPQL database optimization"
+        "Capturing 1000+ images per hour with minimal post-processing",
+        "Real-time spatial analysis and line-segment validation",
+        "Automated bulk upload to cloud for auditing",
+        "Integrated hardware camera via Nikon SDK"
       ],
       challenges: [
-        "Designing for scalability and flexibility",
-        "Ensuring data consistency across services",
-        "Optimizing performance with caching"
+        "Integrating Nikon SDK with .NET 8",
+        "Real-time image quality validation",
+        "Handling high-volume data transfer securely"
       ],
-      technologies: ["Spring Boot", "Redis", "JPQL", "Microservices"],
+      technologies: ["C#", ".NET 8", "WPF", "GraphQL", "SQLite", "XAML", "Python", "Nikon SDK"],
+      category: "Enterprise Software"
+    },
+    {
+      title: "Invoice and Billing Documents Data Extraction",
+      description: "Built a high-accuracy OCR system with PaddleOCR and a Llama 3.1 agent for context-aware extraction of structured table data.",
+      achievements: [
+        "High-accuracy OCR with PaddleOCR",
+        "Context-aware extraction using Llama 3.1",
+        "Automated structured data extraction from large-scale documents",
+        "Multi-format invoice support"
+      ],
+      challenges: [
+        "Handling diverse invoice formats and layouts",
+        "Optimizing OCR accuracy for low-quality scans",
+        "Integrating LLM for intelligent data parsing"
+      ],
+      technologies: ["Python", "PaddleOCR", "LlamaIndex (Llama 3.1)", "OpenAI APIs", "PyTorch"],
+      category: "AI/Machine Learning"
+    },
+    {
+      title: "Satellite Frequency Renting and Auto Billing System",
+      description: "Developed a Spring Boot–based automated billing system for Bangladesh Satellite Corporation to calculate satellite frequency usage.",
+      achievements: [
+        "Pay-per-use billing model for TV channels",
+        "Dynamic invoice generation with JasperReports",
+        "Reduced manual reporting efforts by 50%",
+        "Automated email notifications via SendGrid"
+      ],
+      challenges: [
+        "Complex billing calculations based on usage patterns",
+        "Generating professional PDF invoices dynamically",
+        "Ensuring accurate billing and reporting"
+      ],
+      technologies: ["Java", "Spring Boot", "JasperSoft", "SendGrid", "PostgreSQL"],
       category: "Backend Development"
-    },
-    {
-      title: "E-commerce Platform Revamp",
-      description: "Complete overhaul of an e-commerce platform's frontend and backend for improved performance and user experience.",
-      achievements: [
-        "Reduced page load time by 50%",
-        "Enhanced mobile responsiveness",
-        "Integrated third-party payment gateways",
-        "Implemented real-time order tracking"
-      ],
-      challenges: [
-        "Migrating legacy code to modern stack",
-        "Ensuring zero downtime during transition",
-        "Thorough testing of payment and order systems"
-      ],
-      technologies: ["React", "Node.js", "MongoDB", "Express"],
-      category: "Full Stack Development"
-    },
-    {
-      title: "Real-time Chat Application",
-      description: "A feature-rich chat application supporting text, voice, and video communication built with a microservices architecture.",
-      achievements: [
-        "Supports 1000+ concurrent users",
-        "End-to-end encrypted messages",
-        "Real-time message delivery and notifications",
-        "User presence and status indicators"
-      ],
-      challenges: [
-        "Implementing WebRTC for video/voice",
-        "Ensuring low-latency message delivery",
-        "Scaling the application to handle peak loads"
-      ],
-      technologies: ["Node.js", "Socket.IO", "MongoDB", "Redis"],
-      category: "Real-time Applications"
     }
   ];
 

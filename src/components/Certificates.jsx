@@ -2,27 +2,64 @@ import React from 'react';
 
 const certificates = [
 	{
-		name: 'AWS Certified Solutions Architect',
-		issuer: 'Amazon Web Services',
+		name: 'Best Emerging Engineer Award',
+		issuer: 'Golden Harvest Infotech',
 		year: '2024',
-		image: '/certificates/aws.png',
+		location: 'Dhaka, Bangladesh',
+		image: '/certificates/best-engineer.png',
 		link: '#',
-		description: 'Validated expertise in designing and deploying scalable systems on AWS.',
+		description: 'Recognized for outstanding performance and innovative contributions to engineering projects.',
 	},
 	{
-		name: 'Deep Learning Specialization',
-		issuer: 'Coursera (Andrew Ng)',
-		year: '2023',
-		image: '/certificates/deep-learning.png',
+		name: 'Bangladesh-Japan Engineers Training Program',
+		issuer: 'Miyazaki University',
+		year: '2022',
+		location: 'Miyazaki, Japan',
+		image: '/certificates/bjet.png',
 		link: '#',
-		description: 'Comprehensive understanding of neural networks and deep learning techniques.',
+		description: 'Competitively selected for an international training program focused on advanced engineering practices and cross-cultural technical exchange.',
 	},
-	// Add more as needed
+	{
+		name: 'Best IoT Project Recognition',
+		issuer: 'University Course Project',
+		year: '2019',
+		location: 'Sylhet, Bangladesh',
+		image: '/certificates/iot-project.png',
+		link: '#',
+		description: 'Awarded for developing an innovative Smart Home automation system.',
+	},
+	{
+		name: 'First Prize - Intra-Batch Programming Contest',
+		issuer: 'Shahjalal University',
+		year: '2018',
+		location: 'Sylhet, Bangladesh',
+		image: '/certificates/programming-contest.png',
+		link: '#',
+		description: 'Secured first place in competitive programming contest among batch peers.',
+	},
+	{
+		name: 'First Prize - Essay Writing Competition',
+		issuer: 'University Campus',
+		year: '2017',
+		location: 'Sylhet, Bangladesh',
+		image: '/certificates/essay-writing.png',
+		link: '#',
+		description: 'Secured first place in university-wide essay writing competition.',
+	},
+	{
+		name: 'District Commissioner Scholarship Award',
+		issuer: 'Academic Excellence',
+		year: '2016',
+		location: 'Chittagong, Bangladesh',
+		image: '/certificates/dc-scholarship.png',
+		link: '#',
+		description: 'Awarded scholarship for achieving GPA 5.0/5.0 in Higher Secondary Certificate examination.',
+	}
 ];
 
 const Certificates = () => (
 	<section id="certificates" className="section-padding bg-background mb-12">
-		<h2 className="text-3xl font-bold mb-8 text-center">Certificates</h2>
+		<h2 className="text-3xl font-bold mb-8 text-center">Achievements & Honors</h2>
 		<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
 			{certificates.map((cert, idx) => (
 				<div
@@ -43,9 +80,12 @@ const Certificates = () => (
 							{cert.issuer} &middot; {cert.year}
 						</div>
 						<div className="text-xs text-gray-300 mb-2">
+							{cert.location}
+						</div>
+						<div className="text-xs text-gray-300 mb-2">
 							{cert.description}
 						</div>
-						{cert.link && (
+						{cert.link && cert.link !== '#' && (
 							<a
 								href={cert.link}
 								target="_blank"

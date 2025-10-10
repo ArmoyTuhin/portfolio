@@ -64,37 +64,45 @@ const About = () => {
   const [showAll, setShowAll] = useState(false);
 
   const skills = [
-    { name: 'Java 21', level: 90 },
-    { name: 'Python', level: 85 },
-    { name: 'Spring Boot', level: 88 },
-    { name: 'Machine Learning', level: 82 },
-    { name: 'React/JavaScript', level: 80 },
-    { name: 'Docker', level: 75 },
+    { name: 'Python', level: 95 },
+    { name: 'Java 21', level: 95 },
+    { name: 'C++', level: 90 },
+    { name: 'C', level: 90 },
+    { name: 'Spring Boot', level: 90 },
+    { name: 'FastAPI', level: 85 },
+    { name: 'PyTorch', level: 88 },
+    { name: 'TensorFlow', level: 85 },
+    { name: 'LlamaIndex', level: 82 },
+    { name: 'OpenCV', level: 85 },
+    { name: 'YOLO', level: 88 },
+    { name: '.NET 8', level: 75 },
     { name: 'PostgreSQL', level: 85 },
-    { name: 'TensorFlow/PyTorch', level: 80 },
-    { name: 'Kubernetes', level: 70 },
-    { name: 'TypeScript', level: 78 },
-    { name: 'Redis', level: 75 },
-    { name: 'MongoDB', level: 72 },
-    // ...add more if needed
+    { name: 'Docker', level: 82 },
+    { name: 'AWS S3', level: 80 },
+    { name: 'React', level: 78 },
+    { name: 'Flutter', level: 75 },
+    { name: 'N8N', level: 85 }
   ];
 
   const skillsToShow = showAll ? skills : skills.slice(0, 8);
 
   const education = {
-    university: "Shahjalal University of Science and Technology (SUST), Sylhet",
+    university: "School of Applied Science and Technology, Shahjalal University of Science & Technology",
     degree: "B.Sc. in Computer Science & Engineering",
-    cgpa: "3.27/4.00 (Final Year: 3.7)",
+    period: "Sep 2017 – Apr 2022",
+    location: "Sylhet Engineering College, Sylhet, Bangladesh",
+    cgpa: "3.27/4.00 (Final Year: 3.7/4.00)",
+    thesis: "An Automatic System for Identifying and Categorizing Tribal Clothing Based on Convolutional Neural Networks",
     courses: ["Machine Learning", "Digital Image Processing", "Artificial Intelligence", "Data Structures & Algorithms"]
   };
 
   const leadership = [
-    "Java Instructor (2022–Present)",
-    "General Secretary – CSE Society",
-    "Programming Trainer",
-    "Physics & Math Teacher – Omeca Academic (2018–2022)",
-    "Campus Director – HULT Prize SEC",
-    "VP – SECPA (Photography training)"
+    "Java & Data Structures Instructor (Mentored 10+ students)",
+    "General Secretary – Computer Society (2021–2022)",
+    "Campus Director – Bohubrihi EdTech Platform (2021–2022)",
+    "Vice President & Instructor – SECPA Photography Club (2020–2022)",
+    "Founding Campus Director – HULT Prize SEC",
+    "Mathematics & Physics Instructor – Unmesh Academic Care"
   ];
 
   return (
@@ -118,7 +126,12 @@ const About = () => {
               <div>
                 <h4 className="font-semibold text-lg">{education.degree}</h4>
                 <p className="text-muted-foreground">{education.university}</p>
+                <p className="text-sm text-muted-foreground">{education.period}</p>
                 <p className="text-sm font-medium mt-2">CGPA: {education.cgpa}</p>
+              </div>
+              <div>
+                <h5 className="font-medium mb-2">Thesis:</h5>
+                <p className="text-sm text-muted-foreground italic">{education.thesis}</p>
               </div>
               <div>
                 <h5 className="font-medium mb-2">Core Courses:</h5>
@@ -206,36 +219,41 @@ const About = () => {
           <div className="text-left max-w-3xl mx-auto space-y-10 text-base md:text-lg leading-relaxed">
             <div>
               <h3 className="text-2xl font-bold text-center mb-2">📘 Academic Journey & Competitive Programming</h3>
-              During my undergraduate studies in Computer Science and Engineering, I gained a strong foundation in C and C++, which led me to actively participate in competitive programming. I took part in both intra-campus and national-level inter-university programming contests, enhancing my problem-solving mindset.<br /><br />
-              I was among the first batch of the DEVSKILL Competitive Programming Course in 2018 and earned certification for successfully completing it.
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-center mb-2">📱 Development Experience</h3>
-              Following my competitive programming days, I transitioned into mobile app development, starting with native Android and then expanding into Flutter. One of my most significant projects was for the Red Crescent Society of Bangladesh — a learning and quiz platform where trainees could enhance their knowledge and earn certificates.
+              During my undergraduate studies at Shahjalal University of Science & Technology, I built a strong foundation in C and C++, actively participating in competitive programming contests. I competed in ICPC Intra University Selection (ranked top 50 among 900 teams), Leading University National Programming Contest (ranked 72 out of 190 teams), and other inter-university competitions, which sharpened my problem-solving abilities.
             </div>
             <div>
               <h3 className="text-2xl font-bold text-center mb-2">🎓 Leadership & Campus Involvement</h3>
-              Beyond academics, I served as:<br />
-              <ul className="list-disc ml-6">
-                <li>Campus Director for Hult Prize, a global startup competition.</li>
-                <li>Campus Director for Bohubrihi, a leading EdTech platform in Bangladesh.</li>
-                <li>Vice President of the CSE Society at my university, where I organized contests, seminars, and tech talks that encouraged a coding culture on campus.</li>
+              Beyond academics, I served in multiple leadership roles:<br />
+              <ul className="list-disc ml-6 mt-2">
+                <li><strong>General Secretary – Computer Society (2021–2022):</strong> Organized the university's annual programming contest and coordinated departmental technical events.</li>
+                <li><strong>Campus Director – Bohubrihi EdTech Platform (2021–2022):</strong> Organized programming sessions and workshops to enhance student skills.</li>
+                <li><strong>Vice President & Instructor – SECPA Photography Club (2020–2022):</strong> Served as Image Aesthetics Instructor, conducting workshops on visual composition. My work has won several national and international photography awards.</li>
+                <li><strong>Founding Campus Director – HULT Prize SEC:</strong> Organized online seminars and programs to promote social entrepreneurship on campus.</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-2xl font-bold text-center mb-2">🧑‍💻 Internship & Early Career</h3>
-              In my final year, I interned at Rokkhi BD, a startup focused on end-to-end building management systems. This experience helped me solidify my Flutter skills in a production environment.<br /><br />
-              After graduation, I was selected through a rigorous coding and interview process into the prestigious BJET (Bangladesh-Japan Engineers Training Program), where I further honed my technical and professional skills.
+              <h3 className="text-2xl font-bold text-center mb-2">🧑‍💻 Internship & Career Growth</h3>
+              I started my professional journey as an intern at <strong>Rokkhi IT Limited</strong> (June 2022 – Jan 2023), where I implemented an automated document processing feature using Java and EasyOCR Python module, reducing manual data entry by over 50%.<br /><br />
+              After my internship, I was selected for the prestigious <strong>Bangladesh-Japan Engineers Training Program (2022)</strong> at Miyazaki University, a competitive international training program focused on advanced engineering practices and cross-cultural technical exchange.
             </div>
             <div>
               <h3 className="text-2xl font-bold text-center mb-2">💼 Professional Experience</h3>
-              Post-BJET, I joined Inspir8 Bangladesh, where I’ve grown both as a software engineer and as a problem solver. I was promoted based on my contributions to project delivery and innovation. Alongside professional development, I’ve consistently pushed myself to stay updated with new tools, automation workflows (like n8n), and scalable software practices.
+              Since February 2023, I've been working as a <strong>Software Engineer at Golden Harvest Infotech Limited</strong>, where I've made significant contributions:<br />
+              <ul className="list-disc ml-6 mt-2">
+                <li>Designed a <strong>RAG-based multi-agent system</strong> in the healthcare domain for processing and retrieving insights from medical data (prescriptions, reports, patient records).</li>
+                <li>Developed a <strong>desktop application integrated with hardware camera (via SDKs)</strong> to capture customized images, perform real-time image analysis, and securely upload digitized church records in bulk to the cloud for auditing and data entry.</li>
+                <li>Received the <strong>Best Emerging Engineer Award (2024)</strong> for outstanding performance and innovative contributions to engineering projects.</li>
+              </ul>
             </div>
             <div>
               <h3 className="text-2xl font-bold text-center mb-2">🧠 Research & Publications</h3>
-              My journey into Machine Learning began with a self-initiated project to extract insights from billing data, visualizing them through interactive charts. This evolved into deeper academic research:<br /><br />
-              <span className="font-semibold">Undergraduate Thesis:</span> Tribal Dress Classification in Bangladesh — a pioneering work focusing on the unique attire of over 12 indigenous communities using computer vision techniques like YOLOv5.<br />
-              <span className="font-semibold">Published Work:</span> Co-authored a book chapter on ensemble learning and energy analytics, contributing to scholarly research in sustainable computing.
+              My research journey focuses on AI/ML applications:<br /><br />
+              <span className="font-semibold">Undergraduate Thesis:</span> Developed a CNN-based system using the custom-made 'TribalBd' dataset to classify Bangladeshi tribal dresses, achieving 89.97% accuracy with YOLOv5, surpassing YOLOv6 (86.24%) and YOLOv7 (71.28%). Published in IEEE (2022).<br /><br />
+              <span className="font-semibold">Book Chapter (Springer - 2025):</span> Co-authored "BLDAR: A Blending Ensemble Learning Approach for Primary Energy Consumption Analysis," implementing a novel blended ensemble model integrating LightGBM, Decision Tree, AdaBoost, and Random Forest regressors, achieving a state-of-the-art 90% R² score for sustainable energy analytics.
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-center mb-2">🎓 Teaching & Mentorship</h3>
+              I'm passionate about sharing knowledge and have mentored over 10+ students in Java & Data Structures, resulting in improved programming skills and successful project completions. I've also taught Mathematics and Physics to college-level students at Unmesh Academic Care, delivering comprehensive lessons and supporting academic development.
             </div>
           </div>
         </motion.div>
