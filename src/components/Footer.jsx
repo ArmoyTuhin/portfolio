@@ -101,8 +101,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="flex flex-col items-center justify-center w-full text-sm text-gray-500 gap-4">
             <p className="flex items-center gap-2 font-mono">
-              © {currentYear} Tuhin Chowdhury - This website has been made by AI with one cup of 
-              <span className="text-lg">☕</span>
+              © {currentYear} Tuhin Chowdhury - This website has been made with the help of AI
             </p>
           </div>
         </div>

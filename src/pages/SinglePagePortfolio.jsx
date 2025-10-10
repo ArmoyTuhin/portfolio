@@ -120,7 +120,7 @@ const SinglePagePortfolio = () => {
                 { id: 'research', label: '[RESEARCH]', action: 'scroll' },
                 { id: 'projects', label: '[PROJECTS]', action: 'scroll' },
                 { id: 'skills', label: '[SKILLS]', action: 'scroll' },
-                { id: 'activities', label: '[Curricular ACTIVITIES]', action: 'scroll' },
+                { id: 'activities', label: '[ACTIVITIES]', action: 'scroll' },
                 { id: 'cv', label: '[Download CV]', action: 'download' }
               ].map((item) => (
                 <button
