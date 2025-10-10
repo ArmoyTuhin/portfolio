@@ -65,20 +65,20 @@ const TerminalTyping = () => {
         style={{ boxShadow: '0 0 30px rgba(0, 255, 255, 0.2)' }}
       >
         {/* Terminal Header */}
-        <div className="bg-gradient-to-r from-cyan-900/50 to-purple-900/50 px-4 py-3 flex items-center gap-2 border-b border-cyan-500/30">
-          <div className="flex gap-2">
-            <div className="w-3 h-3 rounded-full bg-red-500"></div>
-            <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-            <div className="w-3 h-3 rounded-full bg-green-500"></div>
+        <div className="bg-gradient-to-r from-cyan-900/50 to-purple-900/50 px-3 md:px-4 py-2 md:py-3 flex items-center gap-1.5 md:gap-2 border-b border-cyan-500/30">
+          <div className="flex gap-1.5 md:gap-2">
+            <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-red-500"></div>
+            <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-yellow-500"></div>
+            <div className="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-green-500"></div>
           </div>
-          <span className="text-cyan-400 text-sm font-mono ml-2">tuhin@portfolio:~</span>
+          <span className="text-cyan-400 text-xs md:text-sm font-mono ml-1 md:ml-2">tuhin@portfolio:~</span>
         </div>
 
         {/* Terminal Body */}
-        <div className="p-6 font-mono text-base min-h-[420px]">
+        <div className="p-4 sm:p-5 md:p-6 font-mono text-xs sm:text-sm md:text-base min-h-[300px] sm:min-h-[360px] md:min-h-[420px]">
           {/* Profile Image */}
-          <div className="flex justify-center mb-6">
-            <div className="w-32 h-32 rounded-lg overflow-hidden border-2 border-cyan-500/50" style={{boxShadow: '0 0 20px rgba(0, 255, 255, 0.3)'}}>
+          <div className="flex justify-center mb-4 md:mb-6">
+            <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-lg overflow-hidden border-2 border-cyan-500/50" style={{boxShadow: '0 0 20px rgba(0, 255, 255, 0.3)'}}>
               <img
                 src={tuhinPortrait}
                 alt="Tuhin Chowdhury"
@@ -89,7 +89,7 @@ const TerminalTyping = () => {
           </div>
 
           {lines.map((line, index) => (
-            <div key={index} className="mb-2">
+            <div key={index} className="mb-1.5 md:mb-2 break-words">
               {line.type === 'command' ? (
                 <span className="text-cyan-400">{line.text}</span>
               ) : (
@@ -99,7 +99,7 @@ const TerminalTyping = () => {
           ))}
           
           {isTyping && currentText && (
-            <div className="mb-2">
+            <div className="mb-1.5 md:mb-2 break-words">
               {terminalLines[currentLineIndex]?.type === 'command' ? (
                 <span className="text-cyan-400">
                   {currentText}

@@ -17,14 +17,14 @@ const SinglePagePortfolio = () => {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section id="hero" className="section-padding relative overflow-hidden min-h-screen flex items-center">
+      <section id="hero" className="section-padding relative overflow-hidden min-h-screen flex items-center py-12 md:py-20">
         {/* 3D Background */}
-        <div className="absolute inset-0 opacity-20">
+        <div className="absolute inset-0 opacity-20 hidden md:block">
           <Scene3D variant="hero" />
         </div>
         
-        <div className="max-w-7xl mx-auto relative z-10 w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div className="max-w-7xl mx-auto relative z-10 w-full px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 items-start">
             {/* LEFT: Terminal */}
             <div className="lg:col-span-4">
               <TerminalTyping />
@@ -37,72 +37,72 @@ const SinglePagePortfolio = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="lg:col-span-6"
             >
-              <h1 className="text-5xl md:text-6xl font-bold mb-4 font-mono text-cyan-400 sci-fi-glow">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 md:mb-4 font-mono text-cyan-400 sci-fi-glow leading-tight">
                 TUHIN CHOWDHURY
               </h1>
-              <p className="text-xl text-purple-400 mb-6 font-mono">
+              <p className="text-base sm:text-lg md:text-xl text-purple-400 mb-4 md:mb-6 font-mono leading-relaxed">
                 BACKEND SOFTWARE ENGINEER | AI/ML RESEARCHER
               </p>
-              <p className="text-lg text-gray-400 mb-6 font-mono">
+              <p className="text-sm sm:text-base md:text-lg text-gray-400 mb-4 md:mb-6 font-mono">
                 3.5+ Years Experience
               </p>
               
-              <div className="space-y-3 mb-8 text-base">
+              <div className="space-y-2 md:space-y-3 mb-6 md:mb-8 text-sm md:text-base">
                 <p className="flex items-center gap-2">
-                  <GraduationCap size={20} />
-                  <span>B.Sc. in Computer Science & Engineering</span>
+                  <GraduationCap size={18} className="flex-shrink-0" />
+                  <span className="break-words">B.Sc. in Computer Science & Engineering</span>
                 </p>
                 <p className="flex items-center gap-2">
-                  <Mail size={20} />
-                  <a href="mailto:tuhin.sec@gmail.com" className="hover:underline">
+                  <Mail size={18} className="flex-shrink-0" />
+                  <a href="mailto:tuhin.sec@gmail.com" className="hover:underline break-all">
                     tuhin.sec@gmail.com
                   </a>
                 </p>
               </div>
 
               {/* Social Links */}
-              <div className="flex flex-wrap gap-4 mb-8">
+              <div className="flex flex-wrap gap-2 md:gap-4 mb-6 md:mb-8">
                 <a
                   href="https://linkedin.com/in/tuhin-chowdhury-4b002b172"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 border border-cyan-500/50 rounded-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500 transition-all font-mono text-sm"
+                  className="flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 border border-cyan-500/50 rounded-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500 transition-all font-mono text-xs md:text-sm"
                 >
-                  <Linkedin size={18} />
-                  LinkedIn
+                  <Linkedin size={16} className="md:w-[18px] md:h-[18px]" />
+                  <span className="whitespace-nowrap">LinkedIn</span>
                 </a>
                 <a
                   href="https://github.com/ArmoyTuhin"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 border border-cyan-500/50 rounded-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500 transition-all font-mono text-sm"
+                  className="flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 border border-cyan-500/50 rounded-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500 transition-all font-mono text-xs md:text-sm"
                 >
-                  <Github size={18} />
-                  GitHub
+                  <Github size={16} className="md:w-[18px] md:h-[18px]" />
+                  <span className="whitespace-nowrap">GitHub</span>
                 </a>
                 <a
                   href="https://scholar.google.com/citations?hl=en&user=nXVEk7wAAAAJ"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 px-4 py-2 border border-cyan-500/50 rounded-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500 transition-all font-mono text-sm"
+                  className="flex items-center gap-1.5 md:gap-2 px-3 md:px-4 py-2 border border-cyan-500/50 rounded-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500 transition-all font-mono text-xs md:text-sm"
                 >
-                  <BookOpen size={18} />
-                  Google Scholar
+                  <BookOpen size={16} className="md:w-[18px] md:h-[18px]" />
+                  <span className="whitespace-nowrap">Scholar</span>
                 </a>
               </div>
 
-              <p className="text-muted-foreground leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-4 md:mb-6 text-sm md:text-base">
                 I am a Software Engineer at <strong>Golden Harvest Infotech Limited</strong>. Throughout my career, I have experience in working with <strong>Flutter</strong>, 
                 <strong>Native Android</strong>, <strong>Java Backend</strong>, and <strong>Desktop applications</strong>, with a focus on <strong>Java Backend Engineering</strong>.
               </p>
               
-              <p className="text-muted-foreground leading-relaxed mb-6">
+              <p className="text-muted-foreground leading-relaxed mb-4 md:mb-6 text-sm md:text-base">
                 Currently my work focused on <strong>AI/ML applications</strong>, especially <strong>agentic AI and agent orchestration</strong>, <strong>medical healthcare system and data security</strong>, 
                 and <strong>scalable backend systems</strong>. My research interests include <strong>Healthcare AI</strong>, <strong>healthcare data security</strong>, 
                 <strong>software engineering</strong>, and <strong>software security</strong>. I am currently exploring <strong>federated learning</strong>.
               </p>
               
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
                 Beyond technology, I am a passionate <strong>street photographer</strong> who has participated in national and international exhibitions and won multiple awards. 
                 View my work on <a href="https://www.flickr.com/photos/194583830@N07/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:text-cyan-300 underline">Flickr</a>.
               </p>
@@ -113,7 +113,7 @@ const SinglePagePortfolio = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="lg:col-span-2 flex flex-col gap-3"
+              className="lg:col-span-2 flex flex-row lg:flex-col gap-2 md:gap-3 flex-wrap lg:flex-nowrap"
             >
               {[
                 { id: 'education', label: '[EDUCATION]', action: 'scroll' },
@@ -137,7 +137,7 @@ const SinglePagePortfolio = () => {
                       scrollToSection(item.id);
                     }
                   }}
-                  className="w-full px-4 py-3 border-2 border-cyan-500/50 rounded-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500 transition-all font-mono text-sm text-center neon-button"
+                  className="flex-1 lg:w-full px-2 sm:px-3 md:px-4 py-2 md:py-3 border-2 border-cyan-500/50 rounded-lg text-cyan-400 hover:bg-cyan-500/10 hover:border-cyan-500 transition-all font-mono text-xs md:text-sm text-center neon-button whitespace-nowrap"
                 >
                   {item.label}
                 </button>
@@ -148,15 +148,15 @@ const SinglePagePortfolio = () => {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="section-padding" style={{background: 'linear-gradient(to bottom, #000000, #0f0f23)'}}>
+      <section id="education" className="section-padding px-4 sm:px-6 lg:px-8" style={{background: 'linear-gradient(to bottom, #000000, #0f0f23)'}}>
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold mb-12 font-mono text-center text-cyan-400 sci-fi-glow">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 md:mb-12 font-mono text-center text-cyan-400 sci-fi-glow">
             EDUCATION
           </h2>
           
           <div className="max-w-4xl mx-auto">
-            <div className="holo-card p-8 rounded-lg border-l-4 border-cyan-500">
-              <div className="flex flex-wrap justify-between items-start mb-6">
+            <div className="holo-card p-4 sm:p-6 md:p-8 rounded-lg border-l-4 border-cyan-500">
+              <div className="flex flex-col md:flex-row md:flex-wrap md:justify-between items-start mb-4 md:mb-6">
                 <div className="flex-1 min-w-0 mb-4 lg:mb-0">
                   <h3 className="text-2xl font-bold mb-2 font-mono">
                     Bachelor of Science in Computer Science & Engineering
