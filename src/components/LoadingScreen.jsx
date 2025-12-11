@@ -25,7 +25,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
           className="mb-4 sm:mb-6"
         >
           <img 
-            src="/Sandy Loading.gif" 
+            src={`${import.meta.env.BASE_URL}Sandy Loading.gif`}
             alt="Loading animation" 
             className="w-48 h-48 xs:w-56 xs:h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 mx-auto object-contain"
           />

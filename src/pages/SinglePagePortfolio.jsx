@@ -67,7 +67,11 @@ const SinglePagePortfolio = () => {
   const [showMoreDetails, setShowMoreDetails] = useState(false);
   const [showMoreEducation, setShowMoreEducation] = useState(false);
   const [selectedReviewIndex, setSelectedReviewIndex] = useState(null);
-  const reviewImages = ['/review1.png', '/review2.png', '/review3.png'];
+  const reviewImages = [
+    `${import.meta.env.BASE_URL}review1.png`,
+    `${import.meta.env.BASE_URL}review2.png`,
+    `${import.meta.env.BASE_URL}review3.png`
+  ];
   
   // Smooth scroll function - prevent unwanted scrolling
   const scrollToSection = (id, e) => {
@@ -636,7 +640,7 @@ const SinglePagePortfolio = () => {
                 client: "Houston, USA",
                 description: "Built Spring Boot microservices to manage patient information, bed management, admissions, and cross-department workflows across OPD, IPD, IAM, and EHR. Implemented secure communication using JWT, timestamp validation, IPC-based internal service calls, and Betterstack for centralized logging. Optimized performance with PostgreSQL through custom SQL, indexing, and optimized joins, along with asynchronous processing, scheduled jobs, and reliable transactional operations. Developed N8N automation workflows, OCR-based patient registration, real-time bed allocation, nurse shift tracking, and duplicate detection, significantly improving system accuracy and operational efficiency.",
                 tech: ["Spring Boot 3", "PostgreSQL", "WebClient", "Spring Security", "ChromaDB", "N8N", "AWS S3", "Docker", "JUnit"],
-                image: "/hospital.png"
+                image: `${import.meta.env.BASE_URL}hospital.png`
               },
               {
                 title: "Supply Chain Management Software",
@@ -649,14 +653,14 @@ const SinglePagePortfolio = () => {
                 client: "Bangladesh Satellite Corporation, Dhaka",
                 description: "Built a Spring Boot billing management system for multiple clients to automate 100% of invoice, chalan, and payment notifications via SMTP email, handling 15+ JasperReports with multi-report and graph-based analytics, deployed using Docker. Calculated satellite frequency usage on a pay-per-use model, integrating dynamic reporting and analytics, which eliminated manual reporting and reduced operational effort by 50% while ensuring reliable, scalable billing workflows.",
                 tech: ["Java", "Spring Boot", "JasperReport", "Sendgrid", "PostgreSQL"],
-                image: "/bscl.png"
+                image: `${import.meta.env.BASE_URL}bscl.png`
               },
               {
                 title: "Church Census Records Archiving Project",
                 client: "US-based Company (Family Ancestry Research)",
                 description: "Engineered the full hardware ecosystem for a high-throughput DSLR imaging system using C#, .NET 8, and Nikon SDK, capturing 1,000+ images per hour with real-time spatial analysis and line-segment validation. Built a portable, offline-ready imaging solution worth 0.5 million BDT for R&D, serving a US-based company focused on family ancestry research. Led the backend team of the desktop application, integrating real-time image processing workflows while preserving visual aesthetics for millions of pages of historical books and documents. Developed a bulk image sharing pipeline maintaining image quality and producing data-entry-ready outputs, enabling faster digitization and collaboration. Solved challenges in real-time customized image capturing and storage management, ensuring efficient image handling and minimal post-processing.",
                 tech: ["C#", ".NET 8", "Nikon SDK", "WPF", "Image Processing"],
-                image: "/cameraproject.png"
+                image: `${import.meta.env.BASE_URL}cameraproject.png`
               }
             ].map((project, index) => (
               <ProjectCard key={index} project={project} index={index} />
