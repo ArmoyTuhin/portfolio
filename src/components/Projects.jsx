@@ -6,72 +6,75 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "AI-Driven Hospital Management System",
-      description: "Built an AI-driven hospital management system with microservices and a RAG-based AI agent for MHM, Houston, TX.",
+      title: "Hospital Management System",
+      description: "Built Spring Boot microservices to manage patient information, bed management, admissions, and cross-department workflows across OPD, IPD, IAM, and EHR for Houston, USA.",
       achievements: [
-        "Reduced scheduling conflicts by 40%",
-        "Improved patient support efficiency",
-        "RAG-based multi-agent system for medical data processing",
-        "Microservices architecture for scalability"
+        "Built Spring Boot microservices to manage patient information, bed management, admissions, and cross-department workflows across OPD, IPD, IAM, and EHR",
+        "Implemented secure communication using JWT, timestamp validation, IPC-based internal service calls, and Betterstack for centralized logging",
+        "Optimized performance with PostgreSQL through custom SQL, indexing, and optimized joins, along with asynchronous processing, scheduled jobs, and reliable transactional operations",
+        "Developed N8N automation workflows, OCR-based patient registration, real-time bed allocation, nurse shift tracking, and duplicate detection, significantly improving system accuracy and operational efficiency"
       ],
       challenges: [
         "Integrating multiple healthcare data sources",
         "Ensuring HIPAA compliance and data security",
         "Building context-aware AI agents for medical queries"
       ],
-      technologies: ["Python", "OpenAI 4", "ChromaDB", "MCP", "N8N", "Betterstack", "AWS S3", "PostgreSQL", "Docker"],
-      category: "AI/Machine Learning"
+      technologies: ["Spring Boot 3", "PostgreSQL", "WebClient", "Spring Security", "ChromaDB", "N8N", "AWS S3", "Docker", "JUnit"],
+      category: "Backend Development",
+      location: "Houston, USA"
     },
     {
-      title: "Church Census Records Archiving Project",
-      description: "Engineered a high-throughput DSLR imaging system with real-time spatial analysis for Family Search, Utah.",
+      title: "Supply Chain Management Software",
+      description: "Designed and implemented the backend for a Garment Supply Chain Management software for 1500+ users, developing 10+ microservices to manage the entire lifecycle from order import via Excel to vendor, warehouse, production updates, and shipment for Garment Industry, Dhaka.",
       achievements: [
-        "Capturing 1000+ images per hour with minimal post-processing",
-        "Real-time spatial analysis and line-segment validation",
-        "Automated bulk upload to cloud for auditing",
-        "Integrated hardware camera via Nikon SDK"
+        "Designed and implemented the backend for a Garment Supply Chain Management software for 1500+ users, developing 10+ microservices to manage the entire lifecycle from order import via Excel to vendor, warehouse, production updates, and shipment, including interactive templates for every phase of garment production",
+        "The system reduced manual work by over 50% and included an automated alert system",
+        "Maintained APIs, service registry, and gateway, handled multiple databases, integrated Feign clients for inter-service communication, and used Zipkin for distributed tracing, ensuring robust, scalable, and observable operations"
       ],
       challenges: [
-        "Integrating Nikon SDK with .NET 8",
-        "Real-time image quality validation",
-        "Handling high-volume data transfer securely"
+        "Handling complex supply chain workflows",
+        "Managing multiple databases and microservices",
+        "Ensuring scalable and reliable operations"
       ],
-      technologies: ["C#", ".NET 8", "WPF", "GraphQL", "SQLite", "XAML", "Python", "Nikon SDK"],
-      category: "Enterprise Software"
-    },
-    {
-      title: "Invoice and Billing Documents Data Extraction",
-      description: "Built a high-accuracy OCR system with PaddleOCR and a Llama 3.1 agent for context-aware extraction of structured table data.",
-      achievements: [
-        "High-accuracy OCR with PaddleOCR",
-        "Context-aware extraction using Llama 3.1",
-        "Automated structured data extraction from large-scale documents",
-        "Multi-format invoice support"
-      ],
-      challenges: [
-        "Handling diverse invoice formats and layouts",
-        "Optimizing OCR accuracy for low-quality scans",
-        "Integrating LLM for intelligent data parsing"
-      ],
-      technologies: ["Python", "PaddleOCR", "LlamaIndex (Llama 3.1)", "OpenAI APIs", "PyTorch"],
-      category: "AI/Machine Learning"
+      technologies: ["Spring Boot 3", "PostgreSQL", "JasperSoft", "Sendgrid", "Docker", "Zipkin"],
+      category: "Backend Development",
+      location: "Garment Industry, Dhaka"
     },
     {
       title: "Satellite Frequency Renting and Auto Billing System",
-      description: "Developed a Spring Boot–based automated billing system for Bangladesh Satellite Corporation to calculate satellite frequency usage.",
+      description: "Built a Spring Boot billing management system for multiple clients to automate 100% of invoice, chalan, and payment notifications via SMTP email for Bangladesh Satellite Corporation, Dhaka.",
       achievements: [
-        "Pay-per-use billing model for TV channels",
-        "Dynamic invoice generation with JasperReports",
-        "Reduced manual reporting efforts by 50%",
-        "Automated email notifications via SendGrid"
+        "Built a Spring Boot billing management system for multiple clients to automate 100% of invoice, chalan, and payment notifications via SMTP email, handling 15+ JasperReports with multi-report and graph-based analytics, deployed using Docker",
+        "Calculated satellite frequency usage on a pay-per-use model, integrating dynamic reporting and analytics, which eliminated manual reporting and reduced operational effort by 50% while ensuring reliable, scalable billing workflows"
       ],
       challenges: [
         "Complex billing calculations based on usage patterns",
         "Generating professional PDF invoices dynamically",
         "Ensuring accurate billing and reporting"
       ],
-      technologies: ["Java", "Spring Boot", "JasperSoft", "SendGrid", "PostgreSQL"],
-      category: "Backend Development"
+      technologies: ["Java", "Spring Boot", "JasperReport", "Sendgrid", "PostgreSQL"],
+      category: "Backend Development",
+      location: "Bangladesh Satellite Corporation, Dhaka"
+    },
+    {
+      title: "Church Census Records Archiving Project",
+      description: "Engineered the full hardware ecosystem for a high-throughput DSLR imaging system using C#, .NET 8, and Nikon SDK, capturing 1,000+ images per hour with real-time spatial analysis and line-segment validation for a US-based company focused on family ancestry research.",
+      achievements: [
+        "Engineered the full hardware ecosystem for a high-throughput DSLR imaging system using C#, .NET 8, and Nikon SDK, capturing 1,000+ images per hour with real-time spatial analysis and line-segment validation",
+        "Built a portable, offline-ready imaging solution worth 0.5 million BDT for R&D, serving a US-based company focused on family ancestry research",
+        "Led the backend team of the desktop application, integrating real-time image processing workflows while preserving visual aesthetics for millions of pages of historical books and documents",
+        "Developed a bulk image sharing pipeline maintaining image quality and producing data-entry-ready outputs, enabling faster digitization and collaboration",
+        "Solved challenges in real-time customized image capturing and storage management, ensuring efficient image handling and minimal post-processing"
+      ],
+      challenges: [
+        "Real-time image processing and validation",
+        "Handling high-volume image capture (1000+ images/hour)",
+        "Maintaining image quality during bulk processing",
+        "Offline-ready portable solution development"
+      ],
+      technologies: ["C#", ".NET 8", "Nikon SDK", "WPF", "Image Processing"],
+      category: "Desktop Application",
+      location: "US-based Company (Family Ancestry Research)"
     }
   ];
 

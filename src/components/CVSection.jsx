@@ -85,12 +85,12 @@ const CVSection = () => {
   <title>${data.name} - CV</title>
   <style>
     body { font-family: 'Arial', sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; color: #333; }
-    h1 { color: #00ffff; border-bottom: 3px solid #00ffff; padding-bottom: 10px; }
-    h2 { color: #6e00ff; margin-top: 30px; border-bottom: 2px solid #6e00ff; padding-bottom: 5px; }
-    h3 { color: #00ffff; margin-top: 20px; }
+    h1 { color: #000000; border-bottom: 3px solid #000000; padding-bottom: 10px; }
+    h2 { color: #404040; margin-top: 30px; border-bottom: 2px solid #404040; padding-bottom: 5px; }
+    h3 { color: #000000; margin-top: 20px; }
     .contact { display: flex; gap: 20px; flex-wrap: wrap; margin: 20px 0; }
     .section { margin: 30px 0; }
-    .job, .publication { margin: 20px 0; padding: 15px; background: #f5f5f5; border-left: 4px solid #00ffff; }
+    .job, .publication { margin: 20px 0; padding: 15px; background: #f5f5f5; border-left: 4px solid #000000; }
     .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
     .skill-category { background: #f0f0f0; padding: 10px; border-radius: 5px; }
     ul { margin: 10px 0; padding-left: 20px; }
@@ -169,7 +169,7 @@ const CVSection = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
             onClick={handleDownload}
-            className="flex items-center gap-2 bg-cyan-500 text-black px-8 py-4 rounded-lg font-medium font-mono hover:bg-cyan-400 transition-all"
+            className="flex items-center gap-2 bg-white text-black px-8 py-4 rounded-lg font-medium font-mono hover:bg-gray-200 transition-all"
             style={{boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'}}
           >
             <Download size={20} />
@@ -192,16 +192,16 @@ const CVSection = () => {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-black border-2 border-cyan-500 rounded-lg w-full max-w-4xl max-h-[90vh] overflow-hidden"
+              className="bg-black border-2 border-white/30 rounded-lg w-full max-w-4xl max-h-[90vh] overflow-hidden"
               onClick={(e) => e.stopPropagation()}
               style={{boxShadow: '0 0 40px rgba(0, 255, 255, 0.3)'}}
             >
               {/* Modal Header */}
-              <div className="flex justify-between items-center p-6 border-b-2 border-cyan-500/30">
-                <h3 className="text-2xl font-bold text-cyan-400 font-mono">// CV_PREVIEW</h3>
+              <div className="flex justify-between items-center p-6 border-b-2 border-white/10">
+                <h3 className="text-2xl font-bold text-white font-mono">// CV_PREVIEW</h3>
                 <button
                   onClick={() => setShowCVModal(false)}
-                  className="text-cyan-400 hover:text-cyan-300 transition-colors"
+                  className="text-white hover:text-gray-300 transition-colors"
                 >
                   <X size={24} />
                 </button>
@@ -212,7 +212,7 @@ const CVSection = () => {
                 <div className="space-y-6">
                   {/* Header */}
                   <div className="text-center mb-8">
-                    <h1 className="text-4xl font-bold text-cyan-400 mb-2">{cvData.name}</h1>
+                    <h1 className="text-4xl font-bold text-white mb-2">{cvData.name}</h1>
                     <p className="text-xl text-purple-400 mb-4">{cvData.title}</p>
                     <div className="flex flex-wrap justify-center gap-4 text-gray-400 text-sm">
                       <span>📧 {cvData.contact.email}</span>
@@ -223,7 +223,7 @@ const CVSection = () => {
 
                   {/* Summary */}
                   <div className="holo-card p-6 rounded-lg">
-                    <h2 className="text-xl font-bold text-cyan-400 mb-3 font-mono">// SUMMARY</h2>
+                    <h2 className="text-xl font-bold text-white mb-3 font-mono">// SUMMARY</h2>
                     <p className="text-gray-400">{cvData.summary}</p>
                   </div>
 
@@ -268,10 +268,10 @@ const CVSection = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {Object.entries(cvData.skills).map(([category, skills]) => (
                         <div key={category}>
-                          <h3 className="text-sm font-semibold text-cyan-400 mb-2">{category}</h3>
+                          <h3 className="text-sm font-semibold text-white mb-2">{category}</h3>
                           <div className="flex flex-wrap gap-2">
                             {skills.map((skill, idx) => (
-                              <span key={idx} className="text-xs bg-cyan-500/10 text-cyan-400 px-2 py-1 rounded border border-cyan-500/30">
+                              <span key={idx} className="text-xs bg-white/10 text-white px-2 py-1 rounded border border-white/20">
                                 {skill}
                               </span>
                             ))}
@@ -284,10 +284,10 @@ const CVSection = () => {
               </div>
 
               {/* Modal Footer */}
-              <div className="p-6 border-t-2 border-cyan-500/30 flex justify-end gap-4">
+              <div className="p-6 border-t-2 border-white/10 flex justify-end gap-4">
                 <button
                   onClick={handleDownload}
-                  className="flex items-center gap-2 bg-cyan-500 text-black px-6 py-3 rounded-lg font-medium font-mono hover:bg-cyan-400 transition-all"
+                  className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-lg font-medium font-mono hover:bg-gray-200 transition-all"
                   style={{boxShadow: '0 0 20px rgba(0, 255, 255, 0.5)'}}
                 >
                   <Download size={18} />

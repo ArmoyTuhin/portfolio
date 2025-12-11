@@ -43,72 +43,72 @@
 
 :root {
   --radius: 0.5rem;
-  /* Sci-Fi Cyberpunk Color Scheme - Force Dark Mode */
+  /* Black & Aesthetic Color Scheme - Minimalist Dark Theme */
   --background: #000000;
-  --foreground: #00ffff;
+  --foreground: #ffffff;
   --card: #0a0a0a;
-  --card-foreground: #00ffff;
+  --card-foreground: #ffffff;
   --popover: #0a0a0a;
-  --popover-foreground: #00ffff;
-  --primary: #00ffff;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
   --primary-foreground: #000000;
-  --secondary: #0f0f23;
-  --secondary-foreground: #00ffff;
-  --muted: #1a1a2e;
-  --muted-foreground: #8b9dc3;
-  --accent: #6e00ff;
-  --accent-foreground: #00ffff;
-  --destructive: #ff0080;
-  --border: #00ffff;
-  --input: #1a1a2e;
-  --ring: #00ffff;
-  --chart-1: #00ffff;
-  --chart-2: #ff00ff;
-  --chart-3: #00ff00;
-  --chart-4: #ffff00;
-  --chart-5: #ff0080;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #ffffff;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --accent: #525252;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --border: #404040;
+  --input: #1a1a1a;
+  --ring: #737373;
+  --chart-1: #ffffff;
+  --chart-2: #a3a3a3;
+  --chart-3: #737373;
+  --chart-4: #525252;
+  --chart-5: #404040;
   --sidebar: #000000;
-  --sidebar-foreground: #00ffff;
-  --sidebar-primary: #00ffff;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #ffffff;
   --sidebar-primary-foreground: #000000;
-  --sidebar-accent: #0f0f23;
-  --sidebar-accent-foreground: #00ffff;
-  --sidebar-border: #00ffff;
-  --sidebar-ring: #00ffff;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #404040;
+  --sidebar-ring: #737373;
 }
 
 .dark {
   --background: #000000;
-  --foreground: #00ffff;
+  --foreground: #ffffff;
   --card: #0a0a0a;
-  --card-foreground: #00ffff;
+  --card-foreground: #ffffff;
   --popover: #0a0a0a;
-  --popover-foreground: #00ffff;
-  --primary: #00ffff;
+  --popover-foreground: #ffffff;
+  --primary: #ffffff;
   --primary-foreground: #000000;
-  --secondary: #0f0f23;
-  --secondary-foreground: #00ffff;
-  --muted: #1a1a2e;
-  --muted-foreground: #8b9dc3;
-  --accent: #6e00ff;
-  --accent-foreground: #00ffff;
-  --destructive: #ff0080;
-  --border: #00ffff;
-  --input: #1a1a2e;
-  --ring: #00ffff;
-  --chart-1: #00ffff;
-  --chart-2: #ff00ff;
-  --chart-3: #00ff00;
-  --chart-4: #ffff00;
-  --chart-5: #ff0080;
+  --secondary: #1a1a1a;
+  --secondary-foreground: #ffffff;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
+  --accent: #525252;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --border: #404040;
+  --input: #1a1a1a;
+  --ring: #737373;
+  --chart-1: #ffffff;
+  --chart-2: #a3a3a3;
+  --chart-3: #737373;
+  --chart-4: #525252;
+  --chart-5: #404040;
   --sidebar: #000000;
-  --sidebar-foreground: #00ffff;
-  --sidebar-primary: #00ffff;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #ffffff;
   --sidebar-primary-foreground: #000000;
-  --sidebar-accent: #0f0f23;
-  --sidebar-accent-foreground: #00ffff;
-  --sidebar-border: #00ffff;
-  --sidebar-ring: #00ffff;
+  --sidebar-accent: #1a1a1a;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #404040;
+  --sidebar-ring: #737373;
 }
 
 @layer base {
@@ -128,8 +128,8 @@
     width: 100%;
     height: 100%;
     background-image: 
-      linear-gradient(rgba(0, 255, 255, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 255, 255, 0.03) 1px, transparent 1px);
+      linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
     background-size: 50px 50px;
     pointer-events: none;
     z-index: 0;
@@ -150,50 +150,19 @@
   }
 }
 
-/* Sci-Fi Glow Effects */
+/* Subtle Glow Effects */
 .sci-fi-glow {
   text-shadow: 
-    0 0 10px rgba(0, 255, 255, 0.5),
-    0 0 20px rgba(0, 255, 255, 0.3),
-    0 0 30px rgba(0, 255, 255, 0.1);
-  animation: pulse-glow 2s ease-in-out infinite;
-}
-
-@keyframes pulse-glow {
-  0%, 100% {
-    text-shadow: 
-      0 0 10px rgba(0, 255, 255, 0.5),
-      0 0 20px rgba(0, 255, 255, 0.3),
-      0 0 30px rgba(0, 255, 255, 0.1);
-  }
-  50% {
-    text-shadow: 
-      0 0 20px rgba(0, 255, 255, 0.8),
-      0 0 30px rgba(0, 255, 255, 0.5),
-      0 0 40px rgba(0, 255, 255, 0.3);
-  }
+    0 0 10px rgba(255, 255, 255, 0.1),
+    0 0 20px rgba(255, 255, 255, 0.05);
 }
 
 /* Border Glow Animation */
 .border-glow {
-  border-color: #00ffff;
+  border-color: #404040;
   box-shadow: 
-    0 0 10px rgba(0, 255, 255, 0.3),
-    inset 0 0 10px rgba(0, 255, 255, 0.1);
-  animation: border-pulse 2s ease-in-out infinite;
-}
-
-@keyframes border-pulse {
-  0%, 100% {
-    box-shadow: 
-      0 0 10px rgba(0, 255, 255, 0.3),
-      inset 0 0 10px rgba(0, 255, 255, 0.1);
-  }
-  50% {
-    box-shadow: 
-      0 0 20px rgba(0, 255, 255, 0.6),
-      inset 0 0 20px rgba(0, 255, 255, 0.2);
-  }
+    0 0 10px rgba(255, 255, 255, 0.05),
+    inset 0 0 10px rgba(255, 255, 255, 0.02);
 }
 
 /* Custom styles for smooth scrolling and animations */
@@ -229,42 +198,40 @@
 
 .hover-lift:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.1);
 }
 
-/* Neon Button Effect */
+/* Aesthetic Button Effect */
 .neon-button {
   position: relative;
   background: transparent;
-  border: 2px solid #00ffff;
-  color: #00ffff;
+  border: 2px solid #404040;
+  color: #ffffff;
   transition: all 0.3s ease;
 }
 
 .neon-button:hover {
-  background: #00ffff;
+  background: #ffffff;
   color: #000;
+  border-color: #ffffff;
   box-shadow: 
-    0 0 20px rgba(0, 255, 255, 0.6),
-    0 0 40px rgba(0, 255, 255, 0.4),
-    inset 0 0 20px rgba(0, 255, 255, 0.2);
+    0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-/* Holographic Card Effect */
+/* Aesthetic Card Effect */
 .holo-card {
   position: relative;
-  background: linear-gradient(135deg, rgba(10, 10, 10, 0.9), rgba(26, 26, 46, 0.5));
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  background: linear-gradient(135deg, rgba(10, 10, 10, 0.9), rgba(26, 26, 26, 0.5));
+  border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
 }
 
 .holo-card:hover {
-  border-color: rgba(0, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.3);
   transform: translateY(-5px);
   box-shadow: 
-    0 10px 30px rgba(0, 255, 255, 0.2),
-    0 0 60px rgba(110, 0, 255, 0.1);
+    0 10px 30px rgba(255, 255, 255, 0.1);
 }
 
 /* Scanline Effect */
@@ -283,7 +250,7 @@
   background: linear-gradient(
     to bottom,
     transparent 50%,
-    rgba(0, 255, 255, 0.02) 50%
+    rgba(255, 255, 255, 0.01) 50%
   );
   background-size: 100% 4px;
   pointer-events: none;

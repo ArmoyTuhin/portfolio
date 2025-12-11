@@ -7,26 +7,26 @@ const Experience = () => {
     {
       company: "Golden Harvest Infotech Limited",
       location: "Dhaka, Bangladesh",
-      period: "Feb 2023 – Present",
+      period: "02/2023 – Present",
       role: "Software Engineer",
       achievements: [
-        "Designed a RAG-based multi-agent system in the healthcare domain for processing and retrieving insights from medical data (prescriptions, reports, patient records)",
-        "Developed a desktop application integrated with hardware camera (via SDKs) to capture customized images, perform real-time image analysis, and securely upload digitized church records in bulk to the cloud for auditing and data entry",
-        "Received Best Emerging Engineer Award (2024) for outstanding performance and innovative contributions"
+        "Experienced in Agile SDLC, working on all phases from requirement analysis to deployment, using Scrum workflows, Jira, and meeting hard deadlines",
+        "Led a research-based project, developed multiple microservices, collaborated with the DevOps team, and maintained CI/CD pipelines",
+        "Mentored junior developers, performed database query optimization, and built AI-based in-house tools and scalable backend systems serving 2,000+ daily users",
+        "Built a Nikon SDK-based desktop application for real-time image capturing and processing, reducing manual work by 60%"
       ],
-      technologies: ["Python", "OpenAI 4", "ChromaDB", "MCP", "N8N", "Betterstack", "AWS S3", "PostgreSQL", "Docker", "C#", ".NET 8", "WPF", "GraphQL", "SQLite", "Nikon SDK"]
+      technologies: ["Java 21", "Spring Boot", ".NET 8", "Flutter", "AWS S3", "Docker", "JUnit", "CI/CD", "Git", "Jasper Reports", "Kafka", "Quadrant DB", "Firebase", "RAG", "PostgreSQL", "HTML", "CSS", "Python"]
     },
     {
       company: "Rokkhi IT Limited",
       location: "Dhaka, Bangladesh",
-      period: "June 2022 – Jan 2023",
-      role: "Software Engineer (Intern)",
+      period: "06/2022 – 01/2023",
+      role: "Junior Software Engineer",
       achievements: [
-        "Implemented an automated document processing feature by building a Java service that connects to an EasyOCR Python module",
-        "Reduced manual data entry by over 50% through intelligent OCR integration",
-        "Gained hands-on experience with microservices architecture and cross-language service integration"
+        "Worked on building management software with a Flutter mobile app and Spring Boot backend, supporting security and parcel management",
+        "Optimized file management and enhanced OCR-based document scanning, maintaining microservices for scalable and reliable operations"
       ],
-      technologies: ["Java", "Spring Boot", "Python", "EasyOCR", "REST APIs", "Microservices"]
+      technologies: ["Java", "Spring Boot", "Flutter", "OCR", "Microservices", "REST APIs"]
     }
   ];
 

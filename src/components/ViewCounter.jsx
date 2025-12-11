@@ -25,10 +25,10 @@ const ViewCounter = () => {
   };
 
   return (
-    <div className="flex items-center gap-2 px-4 py-2 border border-cyan-500/30 rounded-lg bg-black/30 backdrop-blur-sm">
-      <Eye className="w-4 h-4 text-cyan-400" />
-      <span className="text-cyan-400 font-mono text-sm">
-        Profile Views: <span className="text-cyan-300 font-bold">{formatCount(viewCount)}</span>
+    <div className="flex items-center gap-2 px-4 py-2 border border-white/20 rounded-lg bg-black/30 backdrop-blur-sm">
+      <Eye className="w-4 h-4 text-white" />
+      <span className="text-white font-mono text-sm">
+        Profile Views: <span className="text-gray-300 font-bold">{formatCount(viewCount)}</span>
       </span>
     </div>
   );

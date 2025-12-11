@@ -8,8 +8,8 @@ const Publications = () => {
       title: "BLDAR: A Blending Ensemble Learning Approach for Primary Energy Consumption Analysis",
       venue: "Springer",
       type: "Book Chapter",
-      year: "2025",
-      description: "Implemented BLDAR, a novel blended ensemble model integrating LightGBM, Decision Tree, AdaBoost, and Random Forest regressors for forecasting primary energy consumption.",
+      year: "01/12/2024",
+      description: "Implemented BLDAR, a novel blended ensemble model integrating LightGBM, Decision Tree, AdaBoost, and Random Forest regressors for forecasting primary energy consumption. The model achieved a state-of-the-art 90% R2 score, establishing a new benchmark for sustainable energy analytics.",
       achievements: [
         "Achieved state-of-the-art 90% R² score",
         "Established new benchmark for sustainable energy analytics",
@@ -17,22 +17,22 @@ const Publications = () => {
         "Contributed to sustainable energy research"
       ],
       technologies: ["LightGBM", "Decision Tree", "AdaBoost", "Random Forest", "Python", "Scikit-Learn"],
-      doi: "Springer Book Chapter - 2025"
+      doi: "Springer Book Chapter - 01/12/2024"
     },
     {
       title: "An Automatic System for Identifying and Categorizing Tribal Clothing Based on Convolutional Neural Networks",
       venue: "IEEE",
       type: "Conference Paper",
-      year: "2022",
-      description: "Developed a CNN-based system using the custom-made 'TribalBd' dataset to classify Bangladeshi tribal dresses with high accuracy.",
+      year: "01/12/2021",
+      description: "Developed a CNN-based system using the custom-made 'TribalBd' dataset to classify Bangladeshi tribal dresses, achieving 89.97% accuracy with YOLOv5, surpassing YOLOv6 (86.2%) and YOLOv7 (71.28%).",
       achievements: [
         "Achieved 89.97% accuracy with YOLOv5",
-        "Surpassed YOLOv6 (86.24%) and YOLOv7 (71.28%)",
+        "Surpassed YOLOv6 (86.2%) and YOLOv7 (71.28%)",
         "Created custom 'TribalBd' dataset",
         "Pioneering work in cultural heritage preservation through AI"
       ],
       technologies: ["YOLOv5", "YOLOv6", "YOLOv7", "Computer Vision", "Deep Learning", "Python", "PyTorch"],
-      doi: "IEEE Conference Paper - 2022"
+      doi: "IEEE Conference Paper - 01/12/2021"
     }
   ];
 
@@ -41,35 +41,35 @@ const Publications = () => {
       event: "IEEE Computer Society Bangladesh Chapter Symposium",
       role: "Researcher",
       topic: "Research Abstract Presentation",
-      year: "Nov 2024",
+      year: "11/2024",
       description: "Research abstract accepted for presentation"
     },
     {
       event: "Fourth International Conference on Emerging Research in Electronics, Computer Science and Technology (ICERECT), IEEE",
       role: "Presenter",
-      topic: "Computer Vision Research",
-      year: "Mar 2022",
-      description: "Presented paper on tribal dress classification using CNNs"
+      topic: "Computer Vision",
+      year: "03/2022",
+      description: "Presented paper on Computer Vision"
     },
     {
-      event: "Facebook Developer Circles Challenge (META)",
+      event: "Facebook Developer Circles Challenge | META",
       role: "Top 20 Finalist",
-      topic: "Chatbot Development for Messenger Platform",
-      year: "Feb 2021",
-      description: "Participated in Chatbot-Developments Hackathons and placed in top 20"
+      topic: "Chatbot-Developments Hackathons for Messenger Platform",
+      year: "02/2021",
+      description: "Participated in Chatbot-Developments Hackathons for Messenger Platform and placed in top 20"
     },
     {
       event: "ICPC Intra University Selection Programming Contest",
       role: "Participant",
       topic: "Competitive Programming",
-      year: "Oct 2019",
-      description: "Team ranked top 50 among 900 teams"
+      year: "10/2019",
+      description: "Our team ranked top 50 among 900 teams"
     },
     {
       event: "Leading University National Programming Contest",
       role: "Participant",
       topic: "Competitive Programming",
-      year: "Feb 2018",
+      year: "02/2018",
       description: "Team ranking was 72 out of 190 teams"
     }
   ];

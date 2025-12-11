@@ -2,13 +2,13 @@ import React from 'react';
 
 const volunteeringList = [
 	{
-		org: 'Computer Society',
+		org: 'SEC Computer Society',
 		role: 'General Secretary',
 		year: '11/2021 – 11/2022',
 		desc: 'Organized the university\'s annual programming contest and coordinated departmental technical events.',
 	},
 	{
-		org: 'Bohubrihi - EdTech Platform',
+		org: 'Bohubrihi - Edtech Platform',
 		role: 'Campus Director',
 		year: '01/2021 – 01/2022',
 		desc: 'Organized programming sessions and workshops on behalf of Bohubrihi to enhance student skills.',
@@ -20,22 +20,16 @@ const volunteeringList = [
 		desc: 'Served as Image Aesthetics Instructor and conducted workshops on visual composition and photography techniques. My work has won several national and international awards at photography exhibitions.',
 	},
 	{
-		org: 'HULT Prize SEC',
+		org: 'HULT Prize, SEC',
 		role: 'Founding Campus Director',
 		year: '2019 – 2020',
 		desc: 'Organized online seminars and programs to promote social entrepreneurship on campus.',
 	},
 	{
-		org: 'Unmesh Academic Care',
-		role: 'Mathematics & Physics Instructor',
-		year: '2018 – 2022',
-		desc: 'Taught Mathematics and Physics to college-level students, delivering comprehensive lessons and supporting academic development.',
-	},
-	{
-		org: 'Private Mentorship',
-		role: 'Java & Data Structures Instructor',
+		org: 'Java & Data Structures',
+		role: 'Instructor',
 		year: '2022 – Present',
-		desc: 'Mentored over 10+ students, resulting in improved programming skills and successful project completions.',
+		desc: 'Mentored over 10+ students, resulting in improved programming skill and successful project completions.',
 	}
 ];
 

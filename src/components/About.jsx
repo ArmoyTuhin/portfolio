@@ -64,45 +64,44 @@ const About = () => {
   const [showAll, setShowAll] = useState(false);
 
   const skills = [
-    { name: 'Python', level: 95 },
     { name: 'Java 21', level: 95 },
-    { name: 'C++', level: 90 },
-    { name: 'C', level: 90 },
+    { name: 'C/C++', level: 95 },
+    { name: 'Python', level: 90 },
     { name: 'Spring Boot', level: 90 },
-    { name: 'FastAPI', level: 85 },
-    { name: 'PyTorch', level: 88 },
-    { name: 'TensorFlow', level: 85 },
-    { name: 'LlamaIndex', level: 82 },
-    { name: 'OpenCV', level: 85 },
-    { name: 'YOLO', level: 88 },
-    { name: '.NET 8', level: 75 },
-    { name: 'PostgreSQL', level: 85 },
-    { name: 'Docker', level: 82 },
-    { name: 'AWS S3', level: 80 },
-    { name: 'React', level: 78 },
-    { name: 'Flutter', level: 75 },
-    { name: 'N8N', level: 85 }
+    { name: '.NET 8', level: 85 },
+    { name: 'Flutter', level: 85 },
+    { name: 'AWS S3', level: 85 },
+    { name: 'Docker', level: 85 },
+    { name: 'JUnit', level: 85 },
+    { name: 'CI/CD', level: 85 },
+    { name: 'Git', level: 90 },
+    { name: 'Jasper Reports', level: 80 },
+    { name: 'Kafka', level: 80 },
+    { name: 'Quadrant DB', level: 75 },
+    { name: 'Firebase', level: 80 },
+    { name: 'RAG', level: 85 },
+    { name: 'PostgreSQL', level: 90 },
+    { name: 'HTML', level: 85 },
+    { name: 'CSS', level: 85 }
   ];
 
   const skillsToShow = showAll ? skills : skills.slice(0, 8);
 
   const education = {
-    university: "School of Applied Science and Technology, Shahjalal University of Science & Technology",
-    degree: "B.Sc. in Computer Science & Engineering",
-    period: "Sep 2017 – Apr 2022",
-    location: "Sylhet Engineering College, Sylhet, Bangladesh",
-    cgpa: "3.27/4.00 (Final Year: 3.7/4.00)",
-    thesis: "An Automatic System for Identifying and Categorizing Tribal Clothing Based on Convolutional Neural Networks",
+    university: "Sylhet Engineering College, affiliated with Shahjalal University of Science & Technology",
+    degree: "Bachelor of Science in Computer Science & Engineering",
+    period: "09/2017 – 04/2022",
+    location: "Sylhet, Bangladesh",
+    thesis: "An Automatic System for Identifying and Categorizing Tribal Clothing Based on Convolutional Neural Networks, Machine Learning",
     courses: ["Machine Learning", "Digital Image Processing", "Artificial Intelligence", "Data Structures & Algorithms"]
   };
 
   const leadership = [
-    "Java & Data Structures Instructor (Mentored 10+ students)",
-    "General Secretary – Computer Society (2021–2022)",
-    "Campus Director – Bohubrihi EdTech Platform (2021–2022)",
-    "Vice President & Instructor – SECPA Photography Club (2020–2022)",
-    "Founding Campus Director – HULT Prize SEC",
-    "Mathematics & Physics Instructor – Unmesh Academic Care"
+    "Java & Data Structures Instructor (Mentored over 10+ students)",
+    "General Secretary – SEC Computer Society (11/2021 – 11/2022)",
+    "Campus Director – Bohubrihi - Edtech Platform (01/2021 – 01/2022)",
+    "Vice President & Instructor – SECPA - University Photography Club (01/2020 – 01/2022)",
+    "Founding Campus Director – HULT Prize, SEC"
   ];
 
   return (
